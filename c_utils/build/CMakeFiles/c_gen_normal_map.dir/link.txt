@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -flto -shared  -o c_gen_normal_map.cpython-37m-x86_64-linux-gnu.so CMakeFiles/c_gen_normal_map.dir/src/c_gen_normal_map.cpp.o 

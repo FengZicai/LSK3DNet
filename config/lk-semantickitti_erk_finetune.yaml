@@ -1,0 +1,138 @@
+# Config format schema number
+format_version: 1
+
+###################
+## Model options
+model_params:
+  model_architecture: "largekernelseg"
+
+  input_dims: 13
+  spatial_shape:
+    - 2000
+    - 2000
+    - 120
+  scale_list:
+    - 2
+    - 4
+    - 8
+    - 16
+  hiden_size:  64
+  num_classes: 20
+  large_kernel_size:
+    - 9
+    - 9
+    - 9
+  spatial_group_partition:
+    - 0
+    - 3
+    - 6
+    - 9
+  model_load_path: 'output_skitti/opensource_9ks_s030_w64_0.pt'
+  model_save_path: 'output_skitti/opensource_9ks_s030_w64_.pt'
+
+###################
+## Dataset options
+dataset_params:
+  training_size: 19130
+  dataset_type: "point_semkitti_mix"
+  pc_dataset_type: "SemKITTI_sk"
+  collate_type: "mix_collate_fn_default"
+  ignore_label: 0
+  label_mapping: "./config/label_mapping/semantic-kitti-sub.yaml"
+  num_classes: 20
+
+  spatial_shape:
+    - 2000
+    - 2000
+    - 120
+
+  max_volume_space:
+    - 50
+    - 50
+    - 2
+  min_volume_space:
+    - -50
+    - -50
+    - -4
+  seg_labelweights:
+    - 0
+    - 55437630
+    - 320797
+    - 541736
+    - 2578735
+    - 3274484
+    - 552662
+    - 184064
+    - 78858
+    - 240942562
+    - 17294618
+    - 170599734
+    - 6369672
+    - 230413074
+    - 101130274
+    - 476491114
+    - 9833174
+    - 129609852
+    - 4506626
+    - 1168181
+
+  train_data_loader:
+    data_path: "./dataset/SemanticKitti/sequences/"
+    imageset: "train"
+    batch_size:  20
+    num_workers: 20
+    rotate_aug: True
+    flip_aug: True
+    scale_aug: True
+    transform_aug: True
+    dropout_aug: True
+    polarmix_aug: False
+    mix_aug: True
+    instance_aug: False
+    d_point_num: 80000
+
+  val_data_loader:
+    data_path: "./dataset/SemanticKitti/sequences/"
+    num_workers: 8
+    imageset: "val"
+    batch_size: 8
+    rotate_aug: False
+    flip_aug: False
+    scale_aug: False
+    transform_aug: False
+    dropout_aug: False
+    polarmix_aug: False
+    mix_aug: False
+    d_point_num: -1
+
+
+###################
+## Train params
+train_params:
+  seed: 1588147245
+  max_num_epochs: 30
+  learning_rate: 0.0002
+  optimizer: SGD # [SGD, Adam, AdamW]
+  lr_scheduler: StepLR  # [StepLR, ReduceLROnPlateau, CosineAnnealingLR, CosineAnnealingWarmRestarts]
+  momentum: 0.9
+  weight_decay: 1.0e-4
+  nesterov: True
+  lambda_lovasz: 1
+  decay_step: 1
+  decay_rate: 0.5
+  eval_every_n_steps: 299 #683 #597 #1195
+  distributed: False
+  amp_enabled: False
+
+###################
+## Sparse params
+sparse_params:
+  use_sparse: True
+  growth: 'random'
+  prune: 'magnitude'
+  redistribution: 'none'
+  prune_rate: 0.3
+  sparsity: 0.3
+  sparse_init: 'ERK'
+  update_frequency: 8000
+  stop_sparse_epoch: 0

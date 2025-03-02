@@ -1,0 +1,112 @@
+# Config format schema number
+format_version: 1
+
+###################
+## Model options
+model_params:
+  model_architecture: "largekernelseg"
+
+  input_dims: 13
+  spatial_shape:
+    - 1000
+    - 1000
+    - 70
+  scale_list:
+    - 2
+    - 4
+    - 8
+    - 16
+    - 16 
+
+  hiden_size:  128
+  num_classes: 17
+  large_kernel_size:
+    - 9
+    - 9
+    - 9
+  spatial_group_partition:
+    - 0
+    - 3
+    - 6
+    - 9
+  model_load_path: '' 
+  model_save_path: 'output_nuscenes/opensource_9ks_s030_w64_.pt'
+
+###################
+## Dataset options
+dataset_params:
+  training_size: 28130
+  dataset_type: "point_image_dataset_nus"
+  pc_dataset_type: "nuScenes"
+  collate_type: "mix_collate_fn_default"
+  ignore_label: 0
+  label_mapping: "./config/label_mapping/nuscenes.yaml"
+  num_classes: 17
+
+  spatial_shape:
+    - 1000
+    - 1000
+    - 70
+
+  max_volume_space:
+    - 50
+    - 50
+    - 3
+  min_volume_space:
+    - -50
+    - -50
+    - -4
+
+  train_data_loader:
+    data_path: "./dataset/nuscenes/"
+    imageset: "train"
+    batch_size: 8
+    num_workers: 8
+    rotate_aug: True
+    flip_aug: True
+    scale_aug: True
+    transform_aug: True
+    dropout_aug: True
+
+
+  val_data_loader:
+    data_path: "./dataset/nuscenes/"
+    num_workers: 8
+    imageset: "val"
+    batch_size: 8
+    rotate_aug: False
+    flip_aug: False
+    scale_aug: False
+    transform_aug: False
+    dropout_aug: False
+    mix_aug: False
+
+
+###################
+## Train params
+train_params:
+  seed: 1588147245
+  max_num_epochs: 60
+  learning_rate: 0.0005 # 0.00002 #
+  optimizer: AdamW  # [SGD, Adam]
+  weight_decay: 0.02
+  lr_scheduler:  OneCycleLR # [StepLR, ReduceLROnPlateau, CosineAnnealingLR, CosineAnnealingWarmRestarts, ]
+  lambda_lovasz: 1
+  eval_every_n_steps: 799 #683 #597 #1195
+  distributed: True
+  amp_enabled: False
+
+
+###################
+## Sparse params
+sparse_params:
+  use_sparse: True
+  growth: 'random'
+  prune: 'magnitude'
+  redistribution: 'none'
+  prune_rate: 0.3
+  sparsity: 0.3
+  sparse_init: 'ERK'
+  update_frequency: 4000
+  stop_sparse_epoch: 60
+
