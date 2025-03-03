@@ -111,6 +111,7 @@ Use the corresponding test scripts to evaluate the trained models:
   ```bash
   CUDA_VISIBLE_DEVICES=0,1 python test_XXXX.py
   ```
+---
 
 ## Model Zoo
 
