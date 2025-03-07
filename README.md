@@ -134,6 +134,7 @@ Our work references or builds upon:
 - [**SPCONV**](https://github.com/traveller59/spconv)
 - [**LargeKernel3D**](https://github.com/dvlab-research/LargeKernel3D)
 - [**spconv-plus**](https://github.com/dvlab-research/spconv-plus)
+- [**SLaK**](https://github.com/VITA-Group/SLaK)
 
 We thank the authors for their open-source contributions.
 
