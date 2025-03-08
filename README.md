@@ -1,3 +1,6 @@
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/lsk3dnet-towards-effective-and-efficient-3d/lidar-semantic-segmentation-on-nuscenes)](https://paperswithcode.com/sota/lidar-semantic-segmentation-on-nuscenes?p=lsk3dnet-towards-effective-and-efficient-3d)
+
+
 # LSK3DNet: Towards Effective and Efficient 3D Perception with Large Sparse Kernels
 
 ![](figures/SDS.png)
