@@ -1,3 +1,5 @@
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/lsk3dnet-towards-effective-and-efficient-3d/3d-semantic-segmentation-on-semantickitti)](https://paperswithcode.com/sota/3d-semantic-segmentation-on-semantickitti?p=lsk3dnet-towards-effective-and-efficient-3d)
+
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/lsk3dnet-towards-effective-and-efficient-3d/lidar-semantic-segmentation-on-nuscenes)](https://paperswithcode.com/sota/lidar-semantic-segmentation-on-nuscenes?p=lsk3dnet-towards-effective-and-efficient-3d)
 
 
@@ -125,6 +127,7 @@ You can find our pretrained models here.
 | **LSK3DNet (SemanticKITTI val)**| 70.2%      | [Pretrained model](https://1drv.ms/f/c/51047963251c4cf8/Ep3MBBEiAXtHvWaZT9Q7rH0BUmc9SldarSuCKI3f73cFOA?e=0Kxsat)   |
 | **LSK3DNet (NuScenes val)**     | 80.1%      | [Pretrained model](https://1drv.ms/f/c/51047963251c4cf8/Ep3MBBEiAXtHvWaZT9Q7rH0BUmc9SldarSuCKI3f73cFOA?e=0Kxsat)    |
 
+You can refer to the SemanticKITTI test results at [this link](https://codalab.lisn.upsaclay.fr/competitions/6280#results) under the user **Cluster3DSeg_**.
 
 ---
 
