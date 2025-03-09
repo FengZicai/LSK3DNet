@@ -4,6 +4,9 @@
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/lsk3dnet-towards-effective-and-efficient-3d/semantic-segmentation-on-scannet)](https://paperswithcode.com/sota/semantic-segmentation-on-scannet?p=lsk3dnet-towards-effective-and-efficient-3d)
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/lsk3dnet-towards-effective-and-efficient-3d/3d-semantic-segmentation-on-scannet200)](https://paperswithcode.com/sota/3d-semantic-segmentation-on-scannet200?p=lsk3dnet-towards-effective-and-efficient-3d)
+
+
 # LSK3DNet: Towards Effective and Efficient 3D Perception with Large Sparse Kernels
 
 ![](figures/SDS.png)
