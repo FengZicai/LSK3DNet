@@ -131,7 +131,7 @@ You can find our pretrained models here.
 | **LSK3DNet (SemanticKITTI val)**| 70.2%      | [Pretrained model](https://1drv.ms/f/c/51047963251c4cf8/Ep3MBBEiAXtHvWaZT9Q7rH0BUmc9SldarSuCKI3f73cFOA?e=0Kxsat)   |
 | **LSK3DNet (NuScenes val)**     | 80.1%      | [Pretrained model](https://1drv.ms/f/c/51047963251c4cf8/Ep3MBBEiAXtHvWaZT9Q7rH0BUmc9SldarSuCKI3f73cFOA?e=0Kxsat)    |
 
-You can check the SemanticKITTI test results at [this link](https://codalab.lisn.upsaclay.fr/competitions/6280#results) under the user **Cluster3DSeg_**.
+The SemanticKITTI benchmark test results are accessible at [this link](https://codalab.lisn.upsaclay.fr/competitions/6280#results) under the account **Cluster3DSeg_**, while the ScanNet test results can be viewed at [this link](https://kaldir.vc.in.tum.de/scannet_benchmark/semantic_label_3d) under the method entry **LSK3DNet**.
 
 ---
 
