@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -flto -shared  -o c_gen_depth_and_normal.cpython-37m-x86_64-linux-gnu.so CMakeFiles/c_gen_depth_and_normal.dir/src/c_gen_depth_and_normal.cpp.o 

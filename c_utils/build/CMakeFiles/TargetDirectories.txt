@@ -1,5 +1,0 @@
-/home/tuofeng/PVKD/c_utils/build/CMakeFiles/edit_cache.dir
-/home/tuofeng/PVKD/c_utils/build/CMakeFiles/rebuild_cache.dir
-/home/tuofeng/PVKD/c_utils/build/CMakeFiles/c_gen_virtual_scan.dir
-/home/tuofeng/PVKD/c_utils/build/CMakeFiles/c_gen_normal_map.dir
-/home/tuofeng/PVKD/c_utils/build/CMakeFiles/c_gen_depth_and_normal.dir
