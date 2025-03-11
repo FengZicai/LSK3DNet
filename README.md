@@ -158,7 +158,7 @@ This project is released under the [MIT License](LICENSE).
 
 ## Citation
 
-If you find the code useful in your research, please consider citing our [paper]([https://ojs.aaai.org/index.php/AAAI/article/view/27944](https://openaccess.thecvf.com/content/CVPR2024/papers/Feng_LSK3DNet_Towards_Effective_and_Efficient_3D_Perception_with_Large_Sparse_CVPR_2024_paper.pdf)):
+If you find the code useful in your research, please consider citing our [paper](https://openaccess.thecvf.com/content/CVPR2024/papers/Feng_LSK3DNet_Towards_Effective_and_Efficient_3D_Perception_with_Large_Sparse_CVPR_2024_paper.pdf):
 
 ```BibTeX
 @inproceedings{feng2024lsk3dnet,
