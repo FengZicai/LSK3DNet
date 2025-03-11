@@ -151,7 +151,7 @@ Our work references or builds upon:
 - [**LargeKernel3D**](https://github.com/dvlab-research/LargeKernel3D)
 - [**spconv-plus**](https://github.com/dvlab-research/spconv-plus)
 - [**SLaK**](https://github.com/VITA-Group/SLaK)
-- [range-mcl](https://github.com/PRBonn/range-mcl)
+- [**range-mcl**](https://github.com/PRBonn/range-mcl)
 
 We thank the authors for their open-source contributions.
 
