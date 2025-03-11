@@ -32,7 +32,7 @@ warnings.filterwarnings("ignore")
 
 # Testing settings
 parser = argparse.ArgumentParser(description='LSKNet Testing')
-parser.add_argument('--config_path', default='/data0/fengtuo/LSKNet2/config/lk-semantickitti_sub_tta.yaml')
+parser.add_argument('--config_path', default='./config/lk-semantickitti_sub_tta.yaml')
 parser.add_argument('--ip', default='127.0.0.1', type=str)
 parser.add_argument('--port', default='3023', type=str)
 parser.add_argument('--num_vote', type=int, default=14, help='number of voting in the test') #14
