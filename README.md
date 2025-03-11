@@ -1,3 +1,6 @@
+[![arXiv](https://img.shields.io/badge/arXiv-2403.15173-b31b1b.svg)](https://arxiv.org/abs/2403.15173) [![GitHub stars](https://img.shields.io/github/stars/FengZicai/LSK3DNet?style=social)](https://github.com/FengZicai/LSK3DNet) [![Page Views Count](https://badges.toozhao.com/badges/01JP1PZG7G674A3FZB59CGSHYV/blue.svg)](https://badges.toozhao.com/stats/01JP1PZG7G674A3FZB59CGSHYV "Get your own page views count badge on badges.toozhao.com") [![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)](https://opensource.org/licenses/MIT)
+
+
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/lsk3dnet-towards-effective-and-efficient-3d/3d-semantic-segmentation-on-semantickitti)](https://paperswithcode.com/sota/3d-semantic-segmentation-on-semantickitti?p=lsk3dnet-towards-effective-and-efficient-3d)
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/lsk3dnet-towards-effective-and-efficient-3d/lidar-semantic-segmentation-on-nuscenes)](https://paperswithcode.com/sota/lidar-semantic-segmentation-on-nuscenes?p=lsk3dnet-towards-effective-and-efficient-3d)
@@ -6,6 +9,8 @@
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/lsk3dnet-towards-effective-and-efficient-3d/3d-semantic-segmentation-on-scannet200)](https://paperswithcode.com/sota/3d-semantic-segmentation-on-scannet200?p=lsk3dnet-towards-effective-and-efficient-3d)
 
+
+---
 
 # LSK3DNet: Towards Effective and Efficient 3D Perception with Large Sparse Kernels
 
@@ -44,6 +49,7 @@ Below is an overview of the key folders and scripts:
 ```
 .
 ├── builder/                # Scripts to build or initialize models
+├── c_utils/                # C++ library for fast generating of normal and range images
 ├── config/                 # Configuration files (.yaml) for training/testing
 ├── dataloader/             # Data loading scripts
 ├── network/                # Neural network architectures
@@ -145,6 +151,7 @@ Our work references or builds upon:
 - [**LargeKernel3D**](https://github.com/dvlab-research/LargeKernel3D)
 - [**spconv-plus**](https://github.com/dvlab-research/spconv-plus)
 - [**SLaK**](https://github.com/VITA-Group/SLaK)
+- [range-mcl](https://github.com/PRBonn/range-mcl)
 
 We thank the authors for their open-source contributions.
 
