@@ -77,7 +77,7 @@ dataset_params:
     - 1168181
 
   val_data_loader:
-    data_path: "/data0/fengtuo/semantickitti/sequences/"
+    data_path: "./dataset/SemanticKitti/sequences/"
     imageset: "val"
     rotate_aug: True
     flip_aug: True
