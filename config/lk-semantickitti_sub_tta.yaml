@@ -27,7 +27,7 @@ model_params:
     - 3
     - 6
     - 9
-  model_load_path: 'output_skitti/opensource_9ks_s030_w64_rw050_sub_0.pt' 
+  model_load_path: 'output_skitti/opensource_9ks_s030_w64_0.pt' 
   model_save_path: ''
 
 ###################
